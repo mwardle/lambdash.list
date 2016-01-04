@@ -9,6 +9,6 @@
   "author": "Mark Wardle <mwwardle@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "lambdash": "^0.5.0"
+    "lambdash": "^0.5.3"
   }
 }
