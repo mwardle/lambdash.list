@@ -12,6 +12,7 @@ var List = function List() {
 
 List = _.Type.sum(List, {Cons: {head: null, tail: List}, Nil: []});
 
+
 List.isCons = List.case({
     "Cons": true,
     "Nil": false

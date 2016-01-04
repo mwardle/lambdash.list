@@ -2,7 +2,7 @@
   "name": "lamdash.list",
   "version": "0.5.0",
   "description": "List data type for lamdash",
-  "main": "List.js",
+  "main": "src/List.js",
   "scripts": {
     "test": "mocha test/"
   },
