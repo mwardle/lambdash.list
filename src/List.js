@@ -1,4 +1,4 @@
-var _ = require('lamdash');
+var _ = require('lambdash');
 
 var List = function List() {
     var l = List.Nil;
