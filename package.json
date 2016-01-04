@@ -1,0 +1,14 @@
+{
+  "name": "lamdash.list",
+  "version": "0.5.0",
+  "description": "List data type for lamdash",
+  "main": "List.js",
+  "scripts": {
+    "test": "mocha test/"
+  },
+  "author": "Mark Wardle <mwwardle@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "lambdash": "^0.5.0"
+  }
+}
