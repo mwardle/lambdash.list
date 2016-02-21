@@ -1,6 +1,6 @@
 {
   "name": "lambdash.list",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "List data type for Lamdash",
   "main": "src/List.js",
   "scripts": {
