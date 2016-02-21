@@ -208,10 +208,8 @@ describe('List', function(){
             var v;
             try {
                 v = List.nth(8, l);
-                console.log(v);
                 assert(false);
             } catch(e) {
-                console.log(e);
                 assert(e instanceof RangeError);
             }
 
