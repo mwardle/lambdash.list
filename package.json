@@ -1,15 +1,20 @@
 {
   "name": "lambdash.list",
   "version": "0.5.0",
-  "description": "List data type for lamdash",
+  "description": "List data type for Lamdash",
   "main": "src/List.js",
   "scripts": {
-    "test": "mocha test/"
+    "test": "node_modules/.bin/mocha test/",
+    "coverage": "node_modules/.bin/istanbul cover _mocha && open coverage/lcov-report/*.html"
   },
   "author": "Mark Wardle <mwwardle@gmail.com>",
   "license": "MIT",
   "repository": "https://github.com/mwardle/lambdash.list.git",
   "dependencies": {
-    "lambdash": "^0.5.3"
+    "lambdash": "^0.6.1"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.2",
+    "mocha": "^2.4.5"
   }
 }

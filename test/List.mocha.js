@@ -184,6 +184,44 @@ describe('List', function(){
             assert.equal(indexer(3), 4);
             assert.equal(indexer(7), 8);
         });
+
+        it('should accept negative values as indices', function(){
+            var l = List(1,2,3,4,5,6,7,8);
+
+            assert.equal(List.nth(-8, l), 1);
+            assert.equal(List.nth(-5, l), 4);
+            assert.equal(List.nth(-1, l), 8);
+
+            assert.equal(List.nth.length, 2);
+
+            var indexer = List.nth(_, l);
+            assert(_.Fun.member(indexer));
+            assert.equal(indexer.length, 1);
+
+            assert.equal(indexer(-8), 1);
+            assert.equal(indexer(-5), 4);
+            assert.equal(indexer(-1), 8);
+        });
+
+        it('should throw a RangeError if the index is out of bounds', function(){
+            var l = List(1,2,3,4,5,6,7,8);
+            var v;
+            try {
+                v = List.nth(8, l);
+                console.log(v);
+                assert(false);
+            } catch(e) {
+                console.log(e);
+                assert(e instanceof RangeError);
+            }
+
+            try {
+                List.nth(-9, l);
+                assert(false);
+            } catch (e) {
+                assert(e instanceof RangeError);
+            }
+        });
     });
 
     describe('#ap', function() {
@@ -271,4 +309,3 @@ describe('List', function(){
         });
     });
 });
-
